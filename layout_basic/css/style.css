@@ -1,0 +1,47 @@
+* { margin:0; padding:0; }
+li { list-style:none; }
+
+/* 게임 
+
+    css 모듈
+    1. 단위
+    2. 재활용 & 재사용
+
+*/
+
+.grid { width:360px; height:360px; border:1px solid black; padding:10px; 
+    margin:10px; float:left; }
+
+li { width:100px; height:100px; background:#666; float:left; 
+    margin:10px; }
+
+.w2 { width:220px; }
+.w3 { width:340px; }
+.h2 { height:220px; }
+.h3 { height:340px; }
+.right { float:right; }
+.green { background-color:green; }
+.mt1 { margin-top:130px; }
+/*
+.box1 { width:340px; height:220px; }
+.box2 { background-color:green; }
+
+.box3 { width:220px; }
+.box4 { float:right; margin-top:130px; background-color:green; }
+
+.box5 { width:340px; }
+.box6 { height:220px; background-color:green; }
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,158 @@
+.bg1 { border : 5px solid red; }
+/*배경속성*/
+.bg2 {
+    border : 5px solid red;
+    height : 600px;
+/*    1. 배경은 넓이 높이가 존재해야 한다. 그래야 볼 수 있다.
+        2. 패턴 형태로 들어간다. (repeat) */
+/*    필수요소*/
+    background-image:url(../images/img.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+/*
+    background-position:center bottom;  
+    background-position: 40px 150px; 
+    x축 y축
+*/
+/*
+    background-size:200px; 
+    background-size:cover;
+    cover는 창이 따라서 작아짐
+*/
+    background-size : 200px;
+    background-color:orange;
+    background-attachment: fixed;
+/*    배경이 고정된다*/
+    
+    
+    background:url(../images/img.jpg) no-repeat center center 200px orange;
+/*    한꺼번에 쓸 수도 있음*/
+}
+
+
+/*IS 기법*/
+/*아메리카노 하나만 보이기*/
+.coffee { width:300px; 
+    height:300px; 
+    border : 5px solid red; 
+    background-image:url(../images/coffee.png);
+    background-repeat:no-repeat}
+
+.second {
+/*    background-position: -300px, 0;*/
+    background-position : bottom center; 
+    
+}
+
+.second:hover{
+/*
+    background-position: -600px -300px;
+    background-position: 50% 0%;
+    background-position: right bottom;
+    background-position:-600px 0%;
+*/
+    background-position: 100% bottom;
+}
+
+/*내가 한 것*/
+/*
+li {list-style: none ; } 
+.icon{margin:50px 200px;}
+.icon li {margin:50px 10px; border-radius: 7px;}
+
+.icon li
+{   width : 110px; height : 90px;
+    background-image:url(../images/icon.png); 
+    background-repeat:no-repeat;
+    background-size : 1200px; 
+    float:left;
+    position:relative;
+}
+
+.icon li:nth-child(1){background-position: left 96%;}
+.icon li:nth-child(2){background-position: 30% -225px;}
+.icon li:nth-child(3){background-position: center 95%;}
+.icon li:nth-child(4){background-position: 80% 95%;}
+
+.icon li:nth-child(1):hover{background-position: left center;}
+.icon li:nth-child(2):hover{background-position: 30% center;}
+.icon li:nth-child(3):hover{background-position: center;}
+.icon li:nth-child(4):hover{background-position: 80% center;}
+*/
+
+/*선생님이랑 한 것*/
+*{margin:0; padding:0;}
+li {list-style:none;}
+a{text-decoration: none;}
+/*a태그는 밑줄이 생기기 때문에 사용하지 않겠다는 걸 추가적으로 써놓기*/
+
+.icon{width: 416px; margin:50px auto 0;}
+/*상단에 50, 양쪽에 auto, 아래 0*/
+/*(li 하나의 크기 84px+margin 양쪽 10)*4=416px해서 크기를 줄여주고 양쪽에 여백을 준다*/
+.icon li{   width:84px; height:84px; background-color:aqua;
+    float:left; margin:0 10px; 
+    border-radius:10px; 
+    background-image:url(../images/icon.png);
+    background-position:left bottom;}
+/*float로 이동된 건 text-align으로 이동되지 않는다.*/
+/*css3코드 : border-radius:모서리를 둥글게 해주는 코드*/
+
+.icon li:nth-child(2){background-position: -252px bottom;}
+.icon li:nth-child(3){background-position: -420px bottom;}
+.icon li:nth-child(4){background-position: -672px bottom;}
+/*페이스북 84px 위치 기준으로 곱하기를 하면된다.*/
+
+/*
+.icon li:nth-child(1):hover{background-position:left center;}
+.icon li:nth-child(2):hover{background-position:-252px center;}
+.icon li:nth-child(3):hover{background-position:-420px center;}
+.icon li:nth-child(4):hover{background-position:-672px center;}
+*/
+
+.icon li:hover{background-position-y:center;}
+/*y축만 이동하는 것. 파이어폭스에서는 작동이 되지 않는다.*/
+
+
+/*target */
+/*body {height:4000px;}*/
+/*스크롤이 생긴다*/
+
+.menu{}
+.menu li{}
+
+nav {width:200px; background-color:#eee; border-right:1px solid #ddd; 
+    position:fixed; height:100%}
+/*fixed는 스크롤 해도 고정이 된다*/
+h1{font-size : 18px; padding: 20px; }
+/*display block이기 때문에 margin으로 채워져있다*/
+.menu li a{display : block; padding: 0 20px; font-size:12px; color: #555; height: 30px; line-height: 30px;}
+.menu li a:hover{background-color:yellowgreen;}
+
+/*
+.menu li{height: 30px; line-height: 30px; padding: 0 20px; }
+.menu li a{font-size: 12px; color : #555; }
+.menu li:hover{background-color:yellowgreen;}
+.menu li:hover a{color:#fff;}
+*/
+
+section{padding-left:220px; padding-top:20px; padding-right:20px; padding-bottom:20px; }
+/*100%를 하면  블록을 제외하고 100%추가되기에 스크롤이 생긴다. 넓이를 명시하지 않아야 한다*/
+section{padding: 20px; padding-left:220px; }
+/*반드시 순서를 지켜야한다.*/
+article img{margin-top:10px;}
+article h2{margin-bottom:10px; color:#222;}
+article p { font-size:14px; line-height:28px; margin-bottom:30px; color: #777;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
